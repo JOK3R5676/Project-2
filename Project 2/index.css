@@ -1,0 +1,140 @@
+/* Shared navigation appearance: same structure and placement on all pages. */
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.65;
+  background: #f4f7f5;
+  color: #18352e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #123c32;
+  padding: 1.15rem 1rem 1.45rem;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: #e3efe9;
+  color: #123c32;
+}
+
+main {
+  background: white;
+  margin: 2rem auto;
+  padding: 2.1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.65rem 2.5rem #14372c16;
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+main h2 {
+  margin-top: 1.8rem;
+}
+
+main p,
+main dd {
+  max-width: 75ch;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+footer {
+  background: #123c32;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+footer h4 {
+  margin: 0 0 0.3rem;
+}
+
+footer a {
+  color: #d2f4df;
+}
+
+/* Style 1: Fluid home layout using percentages and relative units. */
+.page-index main {
+  width: 88%;
+  max-width: 72rem;
+}
+
+/* Style 2: Home title with a green accent line. */
+.page-index main h1 {
+  color: #11664a;
+  border-bottom: 0.2rem solid #83c4a0;
+  padding-bottom: 0.55rem;
+}
+
+/* Style 3: Hobby descriptions as lightly colored panels. */
+.page-index main dl {
+  background: #eff8f2;
+  padding: 1.3rem 1.7rem;
+  border-radius: 0.8rem;
+}
+
+/* Style 4: Distinctive hobby labels. */
+.page-index main dt {
+  color: #155d4b;
+  letter-spacing: 0.02em;
+  margin-top: 0.9rem;
+}
+
+/* Style 5: Work photo with a framed presentation. */
+.page-index main img[src*="UPS-trailer"] {
+  border: 0.35rem solid #d7e6dc;
+  border-radius: 0.65rem;
+  display: block;
+}
+
+/* Style 6: Family photo with softer edges. */
+.page-index main img[src*="Family"] {
+  border-radius: 1rem;
+  box-shadow: 0 0.35rem 1rem #14372c26;
+  display: block;
+}

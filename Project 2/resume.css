@@ -1,0 +1,149 @@
+/* Shared navigation appearance: same structure and placement on all pages. */
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.65;
+  background: #f4f7f5;
+  color: #18352e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #123c32;
+  padding: 1.15rem 1rem 1.45rem;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: #e3efe9;
+  color: #123c32;
+}
+
+main {
+  background: white;
+  margin: 2rem auto;
+  padding: 2.1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.65rem 2.5rem #14372c16;
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+main h2 {
+  margin-top: 1.8rem;
+}
+
+main p,
+main dd {
+  max-width: 75ch;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+footer {
+  background: #123c32;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+footer h4 {
+  margin: 0 0 0.3rem;
+}
+
+footer a {
+  color: #d2f4df;
+}
+
+/* Style 1: Fixed-width resume page at desktop sizes. */
+.page-resume main {
+  width: 960px;
+}
+
+/* Style 2: Resume header uses a double accent rule. */
+.page-resume main h1 {
+  color: #165d48;
+  border-bottom: 0.35rem double #8abca6;
+  padding-bottom: 0.6rem;
+}
+
+/* Style 3: Section headings stand out with a pale background. */
+.page-resume main h2 {
+  background: #eaf5ed;
+  padding: 0.4rem 0.75rem;
+  border-left: 0.35rem solid #16815b;
+}
+
+/* Style 4: Education logos appear at consistent sizes. */
+.page-resume main img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  background: #fff;
+  margin-right: 1.3rem;
+}
+
+/* Style 5: Education history is visually separated. */
+.page-resume main dl {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #cfe0d4;
+  border-radius: 0.6rem;
+}
+
+/* Style 6: Technical skills are highlighted. */
+.page-resume main ul {
+  background: #f3f8f5;
+  padding: 1rem 1rem 1rem 2.4rem;
+  border-radius: 0.6rem;
+}
+
+/* Keep the fixed width usable on narrower screens. */
+@media (max-width: 1000px) {
+  .page-resume main {
+    width: 94%;
+    padding: 1.2rem;
+  }
+}
