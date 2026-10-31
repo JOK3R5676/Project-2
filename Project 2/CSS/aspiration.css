@@ -1,4 +1,4 @@
-/* Shared navigation appearance: same structure and placement on all pages. */
+/* Shared nav appearance. */
 :root {
   color-scheme: light;
   font-family: Arial, Helvetica, sans-serif;
@@ -98,43 +98,47 @@ footer a {
   color: #d2f4df;
 }
 
-/* Style 1: Fluid home layout using percentages and relative units. */
-.page-index main {
-  width: 88%;
-  max-width: 72rem;
+/* Style 1: Fluid aspirations layout. */
+.page-aspiration main {
+  width: 86%;
+  max-width: 65rem;
 }
 
-/* Style 2: Home title with a green accent line. */
-.page-index main h1 {
-  color: #11664a;
-  border-bottom: 0.2rem solid #83c4a0;
-  padding-bottom: 0.55rem;
+/* Style 2: Aspirations title with a highlight. */
+.page-aspiration main h1 {
+  color: #145c47;
+  background: linear-gradient(transparent 65%, #d7efdf 65%);
+  display: table;
 }
 
-/* Style 3: Hobby descriptions as lightly colored panels. */
-.page-index main dl {
-  background: #eff8f2;
-  padding: 1.3rem 1.7rem;
-  border-radius: 0.8rem;
+/* Style 3: Major goal sections use a left accent rule. */
+.page-aspiration main h2 {
+  border-left: 0.35rem solid #278b66;
+  padding-left: 0.8rem;
+  color: #185744;
 }
 
-/* Style 4: Distinctive hobby labels. */
-.page-index main dt {
-  color: #155d4b;
-  letter-spacing: 0.02em;
-  margin-top: 0.9rem;
-}
-
-/* Style 5: Work photo with a framed presentation. */
-.page-index main img[src*="UPS-trailer"] {
-  border: 0.35rem solid #d7e6dc;
+/* Style 4: Numbered goals use line spacing. */
+.page-aspiration main ol {
+  background: #eef7f1;
   border-radius: 0.65rem;
-  display: block;
+  padding: 1rem 1rem 1rem 2.7rem;
+  line-height: 2;
 }
 
-/* Style 6: Family photo with softer edges. */
-.page-index main img[src*="Family"] {
-  border-radius: 1rem;
-  box-shadow: 0 0.35rem 1rem #14372c26;
+/* Style 5: Video embeds scale inside their container. */
+.page-aspiration main iframe {
   display: block;
+  width: 100%;
+  max-width: 35rem;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 0.7rem;
+}
+
+/* Style 6: Additional goals heading has a contrasting color. */
+.page-aspiration main h3 {
+  color: #247551;
+  letter-spacing: 0.01em;
 }

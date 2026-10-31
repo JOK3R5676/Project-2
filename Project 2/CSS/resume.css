@@ -1,4 +1,4 @@
-/* Shared navigation appearance: same structure and placement on all pages. */
+/* Shared nav appearance. */
 :root {
   color-scheme: light;
   font-family: Arial, Helvetica, sans-serif;
@@ -117,7 +117,7 @@ footer a {
   border-left: 0.35rem solid #16815b;
 }
 
-/* Style 4: Education logos appear at consistent sizes. */
+/* Style 4: Logos appear at consistent sizes. */
 .page-resume main img {
   width: 10rem;
   height: 10rem;
@@ -140,10 +140,4 @@ footer a {
   border-radius: 0.6rem;
 }
 
-/* Keep the fixed width usable on narrower screens. */
-@media (max-width: 1000px) {
-  .page-resume main {
-    width: 94%;
-    padding: 1.2rem;
-  }
-}
+
